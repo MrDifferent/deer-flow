@@ -109,13 +109,6 @@ DeerFlow has newly integrated the intelligent search and crawling toolset indepe
        max_tokens: 4096                  # Maximum tokens per request
        temperature: 0.7                  # Sampling temperature
 
-     - name: openrouter-gemini-2.5-flash
-       display_name: Gemini 2.5 Flash (OpenRouter)
-       use: langchain_openai:ChatOpenAI
-       model: google/gemini-2.5-flash-preview
-       api_key: $OPENAI_API_KEY          # OpenRouter still uses the OpenAI-compatible field name here
-       base_url: https://openrouter.ai/api/v1
-
      - name: gpt-5-responses
        display_name: GPT-5 (Responses API)
        use: langchain_openai:ChatOpenAI
